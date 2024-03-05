@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog details</title>
+    <style>
+        
+        #blogdetails{
+            margin:auto;
+            width: 100px;
+        }
+        .box{
+        margin: auto;
+
+        }
+       
+        #blogdata2 div img{
+            width: 80%;
+        }
+        #blogdata2{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            margin-top: 20PX;     
+        }
+
+        button{
+            border: 2px solid black; 
+        }
+        
+        h3
+        {
+            text-align: center;
+        }
+        #blogdetails input{
+            padding: 15px;
+            margin: auto -50px;
+        }
+        @media (max-width:768px) {
+            #blogdata2 div img{
+            width: 70%;
+        }
+            #blogdata2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            margin-top: 20PX;     
+        } 
+        }
+        @media (max-width:576px) {
+            #blogdata2 div img{
+            width: 100%;
+        }
+            #blogdata2{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+            margin-top: 20PX;     
+        } 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>BLOG DETAILS</h3>
+            <form id="blogdetails">
+                <input type="text" placeholder="title" id="title" required> <p id="t-error"></p>
+                <input type="src" placeholder="img" id="img" required><br><br>
+                <input type="text" placeholder="content" id="content" required>
+                <h4 id="p-error"></h1>
+                <input type="text" placeholder="username" id="username" required>
+                <h6 id="usere"></h6>
+                <input type="submit" value="submit" id="submit" >
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div id="blogdata2">
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
